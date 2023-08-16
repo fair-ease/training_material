@@ -1,0 +1,178 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "Explore, analyse, visualise coastal data.",
+    "creator": [
+        {
+            "class": "Person",
+            "identifier": "Marie59",
+            "name": "Marie Josse"
+        },
+        {
+            "class": "Organization",
+            "name": "Fair-Ease",
+            "url": "https://fairease.eu/"
+        }
+    ],
+    "format-version": "0.1",
+    "license": "CC-BY-4.0",
+    "name": "Coastal Water Dynamics",
+    "steps": {
+        "0": {
+            "annotation": "Needs a netcdf file",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "Needs a netcdf file",
+                    "name": "Netcdf file"
+                }
+            ],
+            "label": "Netcdf file",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "left": 0,
+                "top": 0
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false, \"format\": [\"netcdf\"], \"tag\": null}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "8e4bc9df-db98-490e-8f23-0a448a38bd3a",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "1": {
+            "annotation": "",
+            "content_id": "interactive_tool_source",
+            "errors": null,
+            "id": 1,
+            "input_connections": {
+                "input": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Interactive Source Notebooks",
+            "outputs": [
+                {
+                    "name": "jupyter_notebook",
+                    "type": "ipynb"
+                }
+            ],
+            "position": {
+                "left": 317,
+                "top": 42
+            },
+            "post_job_actions": {
+                "ChangeDatatypeActionjupyter_notebook": {
+                    "action_arguments": {
+                        "newtype": "netcdf"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "jupyter_notebook"
+                }
+            },
+            "tool_id": "interactive_tool_source",
+            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"mode\": {\"mode_select\": \"scratch\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.0.2",
+            "type": "tool",
+            "uuid": "c813fc42-95cc-45b8-991e-649d9fd5762f",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Netcdf file source",
+                    "output_name": "jupyter_notebook",
+                    "uuid": "0b02cbe3-565a-4dfa-93a7-c58945ac38cf"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "",
+            "content_id": "interactive_tool_odv",
+            "errors": null,
+            "id": 2,
+            "input_connections": {
+                "infile": {
+                    "id": 1,
+                    "output_name": "jupyter_notebook"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "ODV",
+            "outputs": [
+                {
+                    "name": "outputs",
+                    "type": "input"
+                }
+            ],
+            "position": {
+                "left": 590.0071803307636,
+                "top": 41.9964670472019
+            },
+            "post_job_actions": {},
+            "tool_id": "interactive_tool_odv",
+            "tool_state": "{\"infile\": {\"__class__\": \"ConnectedValue\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "5.6.5",
+            "type": "tool",
+            "uuid": "5b851d59-3575-43bc-84b7-f7e6cdf1fe87",
+            "when": null,
+            "workflow_outputs": []
+        },
+        "3": {
+            "annotation": "",
+            "content_id": "interactive_tool_divand",
+            "errors": null,
+            "id": 3,
+            "input_connections": {
+                "input": {
+                    "id": 2,
+                    "output_name": "outputs"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "Interactive DIVAnd Notebooks",
+            "outputs": [
+                {
+                    "name": "jupyter_notebook",
+                    "type": "ipynb"
+                }
+            ],
+            "position": {
+                "left": 861.0071803307636,
+                "top": 41.9964670472019
+            },
+            "post_job_actions": {
+                "ChangeDatatypeActionjupyter_notebook": {
+                    "action_arguments": {
+                        "newtype": "netcdf"
+                    },
+                    "action_type": "ChangeDatatypeAction",
+                    "output_name": "jupyter_notebook"
+                }
+            },
+            "tool_id": "interactive_tool_divand",
+            "tool_state": "{\"input\": {\"__class__\": \"ConnectedValue\"}, \"mode\": {\"mode_select\": \"scratch\", \"__current_case__\": 0}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "0.0.5",
+            "type": "tool",
+            "uuid": "7074d566-1b76-4cc0-b43d-918a537b5e67",
+            "when": null,
+            "workflow_outputs": [
+                {
+                    "label": "Netcdf file diva",
+                    "output_name": "jupyter_notebook",
+                    "uuid": "ecd0f0cb-2312-4002-bc4c-47e6d85605ac"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "297fe4ac-8a79-4fe5-b6ca-5bfa967477c4",
+    "version": 5
+}
