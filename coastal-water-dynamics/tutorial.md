@@ -19,7 +19,7 @@ key_points:
 - They will appear at the end of the tutorial
 contributors:
 - marie59
-- contributor2
+
 
 ---
 
@@ -27,6 +27,14 @@ contributors:
 # Introduction
 
 The Earth and Environmental Dynamics study is a huge complex topic, according to the Earth system under analysis and the specific objectives under consideration. [FAIR-EASE](https://fairease.eu/) planned to include in this effort three different Pilots, each one focusing on different Earth systems, each one having specific goals to achieve.
+
+![FAIR-EASE](../../images/coastalwater/fair_ease_colour.png "Fair-Ease project logo")
+
+> <details-title>Projects' collaboration</details-title>
+> This tutorial is the 1st one of many earth-system related tutorials taking place in the 2 european projects, FAIR-EASE and [EuroScienceGateway](https://galaxyproject.org/projects/esg/), collaboration. This [cooperation](https://eosc.eu/news/stronger-together-fair-ease-and-eurosciencegateway-join-forces) aims at developing cross-discipline workflows between climate science, biodiversity studies and the earth sciences—creating, sharing and re-using tools and workflows in the Galaxy platform. 
+>
+>![EuroScienceGateway](../../images/coastalwater/eurosciencegateway.png)
+{: .details}
 
 This tutorial deals with Coastal Water Dynamics (CWD) Pilot, and focuses on the coastal marine environment near river estuaries, where important processes, such as the evolution of plankton blooms or the transport and fate of nutrients, carbon and contaminants, critically depend on many factors, including river discharge, ocean circulation, meteorological conditions as well as biogeochemical processes. 
 Specifically, the proposed demonstrator will focus on the Po river discharging into the Northern Adriatic.
@@ -106,7 +114,7 @@ The aim is to facilitate seamless access to multidisciplinary environmental data
 With the aim of supporting users in the exploitation of multiple, heterogeneous datasets, the Coastal Dynamics Pilot will significantly extend and enhance the capabilities of two existing well-proven, operational services: 
 - ODV for on-line interactive analysis and visualization of environmental data;
 - DIVAnd for intelligent spatial and temporal gridding of oceanographic data;
-- SOURCE a new proposed web service based on the software tool, for the intercomparison of model results with time series observations of essential ocean variables (EOV).
+- a new proposed web service based on the SOURCE software tool, for the intercomparison of model results with time series observations of essential ocean variables (EOV).
 
 ***TODO***![ADD image](../../images/image_name "Legend of the image very detail (for blind people to be read to)")
 
